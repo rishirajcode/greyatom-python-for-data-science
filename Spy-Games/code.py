@@ -74,25 +74,25 @@ file_path_5
 
 #Code starts here
 
-def read_file(path):
-    file = open(path, 'r')
-    sentence = file.readline()
-    file.close()
-    return sentence
+# def read_file(path):
+#     file = open(path, 'r')
+#     sentence = file.readline()
+#     file.close()
+#     return sentence
 
-def compare_msg(message_d, message_e):
-    a_list = message_d.split()
-    b_list = message_e.split()
-    c_list= [i for i in a_list if i not in b_list]
-    final_msg = " ".join(c_list)
-    return final_msg
+# def compare_msg(message_d, message_e):
+#     a_list = message_d.split()
+#     b_list = message_e.split()
+#     c_list= [i for i in a_list if i not in b_list]
+#     final_msg = " ".join(c_list)
+#     return final_msg
 
-message_4 = read_file(file_path_4)
-message_5 = read_file(file_path_5)
-print(message_4)
-print(message_5)
+# message_4 = read_file(file_path_4)
+# message_5 = read_file(file_path_5)
+# print(message_4)
+# print(message_5)
 
-secret_msg_3 = compare_msg(message_4,message_5)
+# secret_msg_3 = compare_msg(message_4,message_5)
 
 
 
