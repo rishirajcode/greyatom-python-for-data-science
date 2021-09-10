@@ -45,12 +45,12 @@ race_3=census[census[:,2]==3]
 race_4=census[census[:,2]==4]
 
 
-#Finding the length of the above created subsets
-len_0=len(race_0)
-len_1=len(race_1)
-len_2=len(race_2)
-len_3=len(race_3)
-len_4=len(race_4)
+# #Finding the length of the above created subsets
+# len_0=len(race_0)
+# len_1=len(race_1)
+# len_2=len(race_2)
+# len_3=len(race_3)
+# len_4=len(race_4)
 
 #Printing the length of the above created subsets
 print('Race_0: ', len_0)
@@ -97,6 +97,6 @@ avg_pay_low=low[:,7].mean()
 
 #Printing the average pay
 print(avg_pay_low)
-#Code ends here
+
 
 
