@@ -1,14 +1,10 @@
-# --------------
-# Import packages
-import numpy as np
-import pandas as pd
-from scipy.stats import mode 
+
+# import numpy as np
+# import pandas as pd
+# from scipy.stats import mode 
 
 
 
-# code starts here
-
-#Load Dataset
 
 bank = pd.read_csv(path)
     
@@ -54,17 +50,15 @@ print(loan_approved_nse)
 percentage_se = (loan_approved_se * 100 / 614)
 percentage_se=percentage_se[0]
 
-# print percentage of loan approved for self employed
 print(percentage_se)
 
-#percentage of loan for non self employed
+
 percentage_nse = (loan_approved_nse * 100 / 614)
 percentage_nse=percentage_nse[0]
 
-#print percentage of loan for non self employed
+
 print (percentage_nse)
 
-# loan amount term 
 loan_term = banks['Loan_Amount_Term'].apply(lambda x: int(x)/12 )
 
 big_loan_term=len(loan_term[loan_term>=25])
